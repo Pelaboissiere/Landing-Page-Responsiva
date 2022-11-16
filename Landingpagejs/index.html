@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Responsiva</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main>
+
+   <!-- cabeçalho -->
+
+    <header class="container-cabecalho">
+
+        <div class="logo">
+            <img src="./img/logo.png" alt="logo">
+            <h1>Future</h1>
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>   
+            <li><a href="#">Sobre nós</a></li>   
+            <li><a href="#">Contato</a></li>   
+            <li><a href="#" class="btn">Registre-se</a></li>   
+        </ul>
+
+    </header>
+
+    <aside>
+        <div class="icon-menu" onclick="abrirmenu()">
+            <span>
+                <ion-icon name="menu-outline"></ion-icon>
+            </span>
+        </div>
+
+        <div id="barra-menu">
+            <ul class="links">
+                <li><a href="#">Home</a></li>   
+                <li><a href="#">Sobre nós</a></li>   
+                <li><a href="#">Contato</a></li>   
+                <li><a href="#" class="btn">Registre-se</a></li>   
+            </ul>
+    <!--Icones-->
+            <div class="c-icon">
+
+                <span class="icon"><ion-icon name="logo-instagram"></ion-icon></span>
+                <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
+                <span class="icon"><ion-icon name="logo-twitter"></ion-icon></span>
+
+            </div>
+        </div>
+    </aside>
+
+    <!-- fim do cabeçalho -->
+
+    <div class="meio">
+
+    <!-- Lado esquerdo da -->
+        
+        <div class="esquerda">
+
+            <div class="title">
+                <h1>O futuro é aqui</h1>
+                <h1 id="spc">Comece agora mesmo</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                
+                <div class="labels">
+                    <label for="name">Nome</label>
+                    <input type="text" name="nome" class="inpt" placeholder="Digite seu nome">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="inpt" placeholder="Digite seu email">
+
+                    <label for="password">Senha</label>
+                    <input type="password" name="senha" class="inpt" placeholder="Digite sua senha">
+
+                </div>
+
+                <div class=>
+                    <button>Vamos começar!</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="direita">
+            <img src="./img/person.png" alt="pessoa">
+        </div>
+
+    </div>
+
+
+
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(25 ,46, 58);
+}
+
+.container-cabecalho {   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: auto
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin-left: 0.8rem;
+}
+
+#spc {
+    margin-bottom: 50px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: #5bacdf;
+    padding: 0.9rem 1.3rem;
+    border-radius: 1rem;
+}
+
+.btn:hover {
+    background-color: #011927;
+    text-decoration: none;
+}
+
+.meio {
+    display: flex;
+    max-width: 100%;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.direita img {
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+}
+
+.esquerda {
+    max-width: 100%;
+}
+
+.esquerda label {
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.esquerda .inpt{
+    padding: 10px;
+    width: 50vh;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+    outline: none;
+}
+
+.esquerda .labels {
+    display: flex;
+    flex-direction: column;
+}
+
+.title h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.esquerda p {
+    color: #fff;
+    line-height: 2.5rem;
+}
+
+button {
+    color: #fff;
+    background-color: #5bacdf;
+    padding: 0.9rem 1.3rem;
+    border-radius: 1rem; 
+    cursor:pointer;
+    border: none;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #011927;
+}
+
+aside {
+    display: none;
+}
+
+@media screen and (max-width: 740px) {
+
+    ul{
+        display: none;
+    }
+
+    .links{
+        display: block;
+    }
+
+   .logo{
+    margin-right: 15rem;
+   }
+
+   aside {
+    position: absolute;
+    top:0;
+    right: 0;
+    display: flex;
+    overflow: hidden;
+   }
+
+   #barra-menu {
+    background-color: #2889c2;
+    width: 0;
+    height: 100vh;
+    transition: 0.5s all;
+   }
+
+   .icon-menu ion-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+    color: #fff;
+    cursor: pointer;
+   }
+
+   #barra-menu ul{
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+    line-height: 5rem;
+   }
+   #barra-menu ul li a{
+    color: #011927;
+    text-decoration: none;
+    font-size: 1rem;
+    width: 100%;
+    }
+
+    #barra-menu ul li a:hover{
+    padding: 8px;
+    border-radius: 15px;
+    background-color: #5bacdf;
+    color: #fff;
+    }
+
+    .c-icon {
+        margin-top: 50%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        overflow: hidden;
+    }
+    .c-icon span {
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    .esquerda .labels {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .title h1{
+        font-size: 2.2rem;
+        margin-left: 1.5rem;
+    }
+
+    .esquerda p {
+        font-size: 1rem;
+        margin-left: 1.5rem;
+        width: 450px;
+    }
+
+    button {
+        margin-left: 1.5rem;;
+    }
+
+    .direita img {
+        max-width: 100%;
+        width: 450px;
+        margin-top: 4.5rem;
+        height: auto;
+    }
+
+    .esquerda .labels {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+   .direita img {
+    margin-left: 1.2rem;
+   }
+
+   .esquerda p {
+    width: 300px;
+   }
+   .esquerda .labels {
+    margin-left: auto;
+}
+}
